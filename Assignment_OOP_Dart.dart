@@ -1,4 +1,3 @@
-// Book Class
 
 class Book {
   String title;
@@ -24,7 +23,6 @@ class Book {
 }
 
 
-// Employee Class
 
 class Employee {
   String name;
@@ -34,7 +32,6 @@ class Employee {
 }
 
 
-// Manager Class
 
 class Manager extends Employee {
   String department;
@@ -52,7 +49,6 @@ class Manager extends Employee {
 }
 
 
-// Developer Class
 
 class Developer extends Employee {
   String programmingLanguage;
@@ -70,15 +66,12 @@ class Developer extends Employee {
 }
 
 
-// Abstract Appliance Class
 
 abstract class Appliance {
   void turnOn();
   void turnOff();
 }
 
-
-// Fan Class
 
 class Fan extends Appliance {
   @override
@@ -93,8 +86,6 @@ class Fan extends Appliance {
 }
 
 
-// Light Class
-
 class Light extends Appliance {
   @override
   void turnOn() {
@@ -108,11 +99,7 @@ class Light extends Appliance {
 }
 
 
-// Main Function
-
 void main() {
-
-  // Book objects
 
   Book book1 = Book(
     'The Alchemist',
@@ -131,17 +118,11 @@ void main() {
   book1.displayBook(10);
   book2.displayBook(15);
 
-
-  // Manager object
-
   Manager manager = Manager(
     'Rahim',
     50000,
     'Human Resources',
   );
-
-
-  // Developer object
 
   Developer developer = Developer(
     'Karim',
@@ -153,9 +134,6 @@ void main() {
 
   manager.displayInfo();
   developer.displayInfo();
-
-
-  // Fan and Light objects
 
   Fan fan = Fan();
   Light light = Light();
